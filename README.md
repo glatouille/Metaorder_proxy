@@ -1,2 +1,5 @@
 # Metaorder_proxy
-Generate realistic metaorders from public data
+
+Based on the article https://arxiv.org/abs/2503.18199, we present here an example implementation of the described code.
+
+
