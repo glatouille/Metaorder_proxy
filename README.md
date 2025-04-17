@@ -15,7 +15,7 @@ This paper introduces a novel algorithm for generating realistic metaorders from
 ## Usage
 1. Install dependencies:
    ```bash
-   pip install -r requirements.txt## Usage
+   pip install -r requirements.txt
 
 
 
