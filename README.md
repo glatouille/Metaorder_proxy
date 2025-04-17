@@ -12,6 +12,12 @@ This paper introduces a novel algorithm for generating realistic metaorders from
 - To simplify the notebook, we provide an example where synthetic metaorders are constructed on synthetic prices. As highlighted in the paper, the square-root law (SQL) cannot be recovered from naively generated synthetic prices. However, applying the same algorithm to real public trade data allows one to reproduce the results shown in the paper.
 - We use here the simplest possible mapping function. Depending on the asset you choose—particularly its liquidity—it may be necessary to fine-tune the mapping function and its parameters for more accurate results.
 
+## Usage
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt## Usage
+
+
 
 
 
