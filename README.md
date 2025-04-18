@@ -27,7 +27,7 @@ If the trade direction is not directly available, it can be inferred by comparin
 - Label as **buy** if trade price > midprice  
 - Label as **sell** if trade price < midprice  
 
-If the midprice is not directly avaible, the SQL holds also for the trade price !
+If the midprice is not available, using trade prices directly should yield similar results.
 
 ## Usage
 1. Install dependencies:
