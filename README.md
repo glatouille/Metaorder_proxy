@@ -12,6 +12,23 @@ This paper introduces a novel algorithm for generating realistic metaorders from
 - To simplify the notebook, we provide an example where synthetic metaorders are constructed on synthetic prices. As highlighted in the paper, the square-root law (SQL) cannot be recovered from naively generated synthetic prices. However, applying the same algorithm to real public trade data allows one to reproduce the results shown in the paper.
 - We use the simplest possible mapping function here. Depending on the asset you choose—particularly its liquidity—it may be necessary to fine-tune the mapping function and its parameters for more accurate results.
 
+## Dataset Requirements
+
+This code generates **synthetic metaorders** from public trade data. 
+
+Your dataset should include the following fields:
+
+- `timestamp`: Date and time of the trade  
+- `sign` (or `side`): Trade direction (buy or sell)  
+- `quantity`: Trade size  
+- `midprice`: Midprice at the start of the trade  
+
+If the trade direction is not directly available, it can be inferred by comparing the trade price to the midprice:
+- Label as **buy** if trade price > midprice  
+- Label as **sell** if trade price < midprice  
+
+If the midprice is not directly avaible, the SQL holds also for the trade price !
+
 ## Usage
 1. Install dependencies:
    ```bash
